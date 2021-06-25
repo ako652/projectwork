@@ -1,11 +1,3 @@
-let newRow = document.querySelectorAll(".tableRowtoHover");
-for (let i = 0; i < newRow.length; i++) {
-  let currentRow = newRow[i];
-  currentRow.addEventListener("click", function () {
-    currentRow.style.color = "greenyellow";
-  });
-}
-
     const loadArtist = function(){
             fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/75621062`, {
             "method": "GET",
@@ -17,18 +9,39 @@ for (let i = 0; i < newRow.length; i++) {
            
           })
           .then(data => {
-            console.log(data.tracks.data)
+            console.log(data.cover)
              displayHtml(data.tracks.data)
           })
           .catch(err => {
             console.error(err);
           });
         }
-let trackList = []
+
+        const picutre = function(){
+            fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/75621062`, {
+            "method": "GET",
+
+          })
+          .then(response => {
+        
+            return response.json();
+           
+          })
+          .then(data => {
+            console.log(data.cover)
+             displayHtml(data)
+          })
+          .catch(err => {
+            console.error(err);
+          });
+        }
+    
+        
 
 const displayHtml = (datas) => {
     datas.forEach( data => {
         let i = 1;
+      duration = data.duration
 let trackListArtist = `<tr
 class="
   tableRowtoHover
@@ -82,9 +95,9 @@ class="
 >
   <a href="./album.html">
     <img
-      src="${data.md5_image}"
+      src="${data.cover_big}"
       width="42"
-      alt=""
+      alt="album"
     />
   </a>
 </td>
@@ -112,11 +125,12 @@ class="
     align-items-center
   "
 >
-  ${data.duration}
+  ${duration}
 </td>
 </tr>`
         let trackListRow = document.getElementsByClassName("trackList")
         trackListRow[0].insertAdjacentHTML("beforeend", trackListArtist);
+
 
         let newRow = document.querySelectorAll(".tableRowtoHover");
         for (let i = 0; i < newRow.length; i++) {
@@ -128,3 +142,4 @@ class="
     });
 } 
 loadArtist();
+picutre();
