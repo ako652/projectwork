@@ -1,9 +1,4 @@
-let newlist=[];   
-const add=function(event){
-const bookdiv =event.currentTarget.closest(".bookdiv" )
-bookdiv.style.backgroundColor="blue"
 
-}
 
 const loadArtist = function(){
     fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/75621062`, {
@@ -70,3 +65,4 @@ loadArtist();
      
      
      
+
