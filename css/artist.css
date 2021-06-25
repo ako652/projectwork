@@ -1,238 +1,231 @@
 /* Ismail */
 
 .artistPic {
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg");
-    height: 370px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  }
-  
-  .artistInformation {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-  }
-  
-  #navBar-artist {
-    background-color: transparent;
-    position: fixed;
-  }
-  
-  .artistPic > .artistInformation > h1 {
-    font-weight: bold;
-  }
-  .artistPic > .artistInformation > h6 {
-    font-weight: bold;
-  }
-  
-  body {
-    background-color: rgb(31, 31, 31);
-  }
-  
-  .table td,
-  .table th {
-    padding: 4px;
-    vertical-align: top;
-    border-top: none;
-  }
-  .table thead th {
-    vertical-align: bottom;
-    border-bottom: none;
-  }
-  
-  .songCover {
-    padding-left: 7rem;
-  }
-  
-  .songNumber,
-  .songCover {
-    max-width: 50%;
-  }
-  
-  .numberOfPlays {
-    min-width: 340px;
-  }
-  
-  .songDuration {
-    justify-content: flex-end;
-  }
-  .songNumber {
-    position: relative;
-  }
-  
-  .play-hidden-tracklist {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    opacity: 0;
-  }
-  
-  .play-hidden-tracklist > img {
-    transform: translateX(7px);
-  }
-  
-  .play-hidden-tracklist:hover {
-    opacity: 1;
-  }
-  
-  .tableRowtoHover:hover {
-    background-color: rgba(77, 77, 77, 0.65);
-  }
-  
-  .Follow-button {
-    border: 1px solid #646464;
-    border-radius: 4px;
-    background-color: transparent;
-    color: white;
-    padding: 3px;
-    margin-left: 30px;
-    width: 81px;
-    font-weight: bold;
-  }
-  
-  .Follow-button:hover {
-    border: 1px solid #ffffff;
-  }
-  
-  .artistMenuButton {
-    background-color: transparent;
-    border: none;
-  }
-  
-  .profile-img {
-    border-radius: 100%;
-    overflow: hidden;
-  }
-  
-  .artistMenuButton:hover {
-    background-color: transparent;
-    color: white;
-    fill: white;
-    border: none;
-  }
-  .navigationArtist .menuForArtistpage {
-    font-size: 40px;
-  }
-  .menuForArtistpage:hover {
-    font-size: 40px;
-    color: #ffffff;
-  }
-  .navigationArtist .popularHeader,
-  .playListName {
-    font-weight: bold;
-  }
-  .playListName {
-    color: white;
-    width: 159px;
-    height: 24px;
-  }
-  .profilButton {
-    background-color: black;
-    right: 0;
-    top: 0;
-    border: 0;
-    border-radius: 30px;
-  }
-  
-  .profilButton:hover,
-  .dropdown-item:hover {
-    background-color: grey;
-    color: white;
-  }
-  .dropdown-item {
-    background-color: rgb(42, 42, 42);
-    color: white;
-  }
-  #dropdownMenuButton:hover {
-    background-color: rgb(34, 33, 33);
-  }
-  #dropdownMenuButtonArtist {
-    font-size: 35px;
-    border-radius: 30px;
-  }
-  
-  .songNumber:hover {
-    color: transparent;
-  }
-  .artist-pick-info > p {
-    width: 200px;
-    font-size: 12px;
-  }
-  .profilButton .navigationArtist {
-    background-color: transparent;
-  }
-  
-  .navbar {
-    position: unset;
-  }
-  
-  .arrows-nav-bar > polyline {
-    stroke: white;
-  }
-  
-  #navBar-artis\ d-flex > nav > div {
-    background: black;
-    border-radius: 30px;
-  }
-  
-  .navigationArtist > span > button {
-    width: 23px;
-    height: 23px;
-    border: 0;
-    background: transparent;
-  }
-  
-  .navigationArtist > span > button > svg {
-    transform: translateX(-1px);
-  }
-  
-  .navigationArtist > span > button:nth-child(2) {
-    background: transparent;
-    width: 23px;
-    height: 23px;
-  }
-  
-  .navigationArtist > span > button:nth-child(2) > svg {
-    transform: translateX(-3px);
-  }
-  
-  .arrows {
-    background-color: black;
-  }
-  
-  .arrows-nav-bar {
-    border-radius: 30px;
-  }
-  
-  .main-icon-without-slide > img:hover {
-    transform: scale(1);
-    transition: 0.1s linear;
-  }
-  
-  .main-icon-without-slide > img:hover {
-    transform: scale(1.1);
-    transition: 0.1s linear;
-  }
-  
-  .songNumber,
-  .songCover {
-    max-width: 64px;
-    min-width: 64px;
-  }
-  
-  .songTitle {
-    min-width: 210px;
-  }
-  .numberOfPlays {
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg");
+  height: 370px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 
+.artistInformation {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
 
+#navBar-artist {
+  background-color: transparent;
+  position: fixed;
+}
 
+.artistPic > .artistInformation > h1 {
+  font-weight: bold;
+}
+.artistPic > .artistInformation > h6 {
+  font-weight: bold;
+}
 
+body {
+  background-color: rgb(31, 31, 31);
+}
 
+.table td,
+.table th {
+  padding: 4px;
+  vertical-align: top;
+  border-top: none;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: none;
+}
 
-  
+.songCover {
+  padding-left: 7rem;
+}
+
+.songNumber,
+.songCover {
+  max-width: 50%;
+}
+
+.numberOfPlays {
+  min-width: 340px;
+}
+
+.songDuration {
+  justify-content: flex-end;
+}
+.songNumber {
+  position: relative;
+}
+
+.play-hidden-tracklist {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.play-hidden-tracklist > img {
+  transform: translateX(7px);
+}
+
+.play-hidden-tracklist:hover {
+  opacity: 1;
+}
+
+.tableRowtoHover:hover {
+  background-color: rgba(77, 77, 77, 0.65);
+}
+
+.Follow-button {
+  border: 1px solid #646464;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  padding: 3px;
+  margin-left: 30px;
+  width: 81px;
+  font-weight: bold;
+}
+
+.Follow-button:hover {
+  border: 1px solid #ffffff;
+}
+
+.artistMenuButton {
+  background-color: transparent;
+  border: none;
+}
+
+.profile-img {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.artistMenuButton:hover {
+  background-color: transparent;
+  color: white;
+  fill: white;
+  border: none;
+}
+.navigationArtist .menuForArtistpage {
+  font-size: 40px;
+}
+.menuForArtistpage:hover {
+  font-size: 40px;
+  color: #ffffff;
+}
+.navigationArtist .popularHeader,
+.playListName {
+  font-weight: bold;
+}
+.playListName {
+  color: white;
+  width: 159px;
+  height: 24px;
+}
+.profilButton {
+  background-color: black;
+  right: 0;
+  top: 0;
+  border: 0;
+  border-radius: 30px;
+}
+
+.profilButton:hover,
+.dropdown-item:hover {
+  background-color: grey;
+  color: white;
+}
+.dropdown-item {
+  background-color: rgb(42, 42, 42);
+  color: white;
+}
+#dropdownMenuButton:hover {
+  background-color: rgb(34, 33, 33);
+}
+#dropdownMenuButtonArtist {
+  font-size: 35px;
+  border-radius: 30px;
+}
+
+.songNumber:hover {
+  color: transparent;
+}
+.artist-pick-info > p {
+  width: 200px;
+  font-size: 12px;
+}
+.profilButton .navigationArtist {
+  background-color: transparent;
+}
+
+.navbar {
+  position: unset;
+}
+
+.arrows-nav-bar > polyline {
+  stroke: white;
+}
+
+#navBar-artis\ d-flex > nav > div {
+  background: black;
+  border-radius: 30px;
+}
+
+.navigationArtist > span > button {
+  width: 23px;
+  height: 23px;
+  border: 0;
+  background: transparent;
+}
+
+.navigationArtist > span > button > svg {
+  transform: translateX(-1px);
+}
+
+.navigationArtist > span > button:nth-child(2) {
+  background: transparent;
+  width: 23px;
+  height: 23px;
+}
+
+.navigationArtist > span > button:nth-child(2) > svg {
+  transform: translateX(-3px);
+}
+
+.arrows {
+  background-color: black;
+}
+
+.arrows-nav-bar {
+  border-radius: 30px;
+}
+
+.main-icon-without-slide > img:hover {
+  transform: scale(1);
+  transition: 0.1s linear;
+}
+
+.main-icon-without-slide > img:hover {
+  transform: scale(1.1);
+  transition: 0.1s linear;
+}
+
+.songNumber,
+.songCover {
+  max-width: 64px;
+  min-width: 64px;
+}
+
+.songTitle {
+  min-width: 210px;
+}
+.numberOfPlays {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
