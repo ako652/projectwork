@@ -6,13 +6,10 @@ for (let i = 0; i < newRow.length; i++) {
   });
 }
 
-
-
     const loadArtist = function(){
             fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/75621062`, {
             "method": "GET",
-            "headers": {
-            }
+
           })
           .then(response => {
         
@@ -21,27 +18,23 @@ for (let i = 0; i < newRow.length; i++) {
           })
           .then(data => {
             console.log(data.tracks.data)
-          //displayHtml(data)
+             displayHtml(data.tracks.data)
           })
           .catch(err => {
             console.error(err);
           });
         }
-        loadArtist();
-
 let trackList = []
 
-const displayHtml = (trackRow) => {
-    trackRow.forEach(data => {
- 
-    
+const displayHtml = (datas) => {
+    datas.forEach( data => {
+        let i = 1;
 let trackListArtist = `<tr
 class="
   tableRowtoHover
   d-flex
   justify-content-start
   align-items-center
-  src="${data.tracks.data.link}"
 "
 >
 <th
@@ -56,7 +49,7 @@ class="
   "
   scope="row"
 >
-  1
+  ${i}
   <div
     class="
       play-hidden-tracklist
@@ -89,7 +82,7 @@ class="
 >
   <a href="./album.html">
     <img
-      src="${data.tracks.data.md5_image}"
+      src="${data.md5_image}"
       width="42"
       alt=""
     />
@@ -98,7 +91,7 @@ class="
 <td
   class="songTitle d-flex text-nowrap fix-table-first-row"
 >
-  ${data.tracks.data.title}
+  ${data.title}
 </td>
 <td
   class="
@@ -119,15 +112,19 @@ class="
     align-items-center
   "
 >
-  ${data.tracks.data.duration}
+  ${data.duration}
 </td>
 </tr>`
+        let trackListRow = document.getElementsByClassName("trackList")
+        trackListRow[0].insertAdjacentHTML("beforeend", trackListArtist);
 
-        trackListArtist.insertAdjacentHTML("afterbegin", trackListArtist);
-
-        trackListArtist.addEventListener("click", function(event){
-            buttonClicked = event.target
-            buttonClicked = "data.tracks.data.link"
-        })
+        let newRow = document.querySelectorAll(".tableRowtoHover");
+        for (let i = 0; i < newRow.length; i++) {
+          let currentRow = newRow[i];
+          currentRow.addEventListener("click", function () {
+            currentRow.style.color = "greenyellow";
+          });
+        }
     });
-}
+} 
+loadArtist();
