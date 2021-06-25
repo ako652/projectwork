@@ -1,0 +1,39 @@
+
+.min-width-rafa-Fix{
+    min-width: 232px;
+    max-width: 232px;
+
+}
+
+.topBar-rafa-fix{
+    position: sticky;
+    top: 0px;
+    background: rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+.profile-BTN-rafa{
+    color: white;
+    background-color: black;
+    border-radius: 16px;
+}
+
+.profile-BTN-rafa:hover{
+    color: white;
+    border-radius: 16px;
+    border-color: white;
+}
+
+.profile-BTN-rafa:active{
+    color: white;
+    border-radius: 16px;
+    border-color: white;
+
+}
+
+.translate-rafa-fix{
+    transform: translateX(-26px);
+
+}
+
+

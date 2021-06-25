@@ -1,0 +1,67 @@
+/* CSS for album page */
+
+.textwrapper{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.cardplaybtn svg{
+    color: white;
+    fill: white;
+
+}
+.topBar-BG-fix{
+    width: 89%;
+   
+    position: fixed;
+    right: -22px;
+    height: 52px;
+}
+.table td, .table th {
+    padding: 0px !important;
+}
+
+
+
+
+.cardplaybtn> svg{
+    bottom: 1em;
+    right: 1em;
+    padding: 0.5em;
+    background-color: green;
+    border-radius: 50px;
+}
+.cardplaybtn ion-icon{
+    width: 30px;
+    
+}
+.controlbtns ion-icon{
+    bottom: 1em;
+    right: 1em;
+    padding: 0.5em;
+    background-color: green;
+    border-radius: 50px;
+}
+
+.BG-gradient-album{
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(242,61,180,0.25) 100%);
+}
+
+
+
+/* Fixes */
+
+.min-width-rafa-Fix{
+    min-width: 232px;
+    max-width: 232px;
+}
+
+.translate-rafa-fix{
+    transform: translateX(-26px);
+
+}
+   
+    

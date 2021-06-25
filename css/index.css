@@ -1,0 +1,546 @@
+/* Rafa Css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.navBar-container {
+}
+
+.mod-navBar {
+  padding-top: 24px;
+  max-width: 232px;
+  background-color: #000000;
+  
+}
+
+.mod-navBar > a:first-child {
+}
+
+.mod-logo {
+  height: 40px;
+  max-width: 131px;
+  width: 100%;
+  margin-left: 24px;
+  margin-bottom: 18px;
+}
+
+.mod-logo > svg,
+.nav-menu > li,
+.nav-menu > li > a {
+  color: white;
+}
+
+.square {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+}
+
+.square.mod-BGC {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+  background-image: linear-gradient(
+    135deg,
+    rgb(69, 10, 245),
+    rgb(196, 239, 217)
+  );
+}
+
+.square.mod-BGC > svg,
+.download-app svg,
+.scrolling-svg > svg,
+.footer-album-icons > div > svg,
+#player-controls > .icon-target-area > svg,
+#pairingDevice > svg,
+#volumeMute-icon svg {
+  fill: white;
+}
+
+#scrolling-menu {
+  width: 240px;
+  height: 484px;
+}
+
+.scrolling-menu > div > p {
+  color: white;
+}
+
+.scroll {
+  color: seashell;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  width: 96%;
+}
+
+.scroll > ul > li {
+  list-style: none;
+  padding-right: 32px;
+}
+
+.mod-color-white,
+.footer-music-name,
+.mod-color-white, .footer-music-name, 
+.footer-album-icons > .icon-target-area > svg,
+#track-bar span {
+  color: white;
+}
+
+.footer-music-name {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Footer Player */
+#footer {
+  position: fixed;
+  bottom: 0px;
+  height: 90px;
+  border-top: 1px solid #282828;
+  background-color: #181818;
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+
+.footer-text-small {
+  font-size: 12px;
+}
+
+.footer-music-stats {
+  width: 30%;
+}
+
+.footer-album-text {
+  min-width: 56px;
+}
+
+.footer-album-cover {
+  min-width: 56px;
+}
+
+.icon-target-area {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Music Player */
+
+#track-bar {
+  max-width: 722px;
+  width: 40%;
+}
+
+#footer-player {
+  width: 40%;
+}
+
+#player-play-music {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+#progress-bar-wrapper {
+  overflow: hidden;
+  width: 100%;
+  /* position: relative; */
+  border-radius: 14%;
+}
+
+#volume-bar-wrapper {
+  overflow: hidden;
+  border-radius: 14%;
+  position: relative;
+}
+
+.bar-outer-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#volume-bar-outer-wrapper {
+  position: relative;
+}
+
+.progress-bar-indicator {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 40px;
+  background-color: rgb(151, 160, 150);
+  z-index: 100;
+  top: -1.5px;
+}
+
+#progress-bar-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  background-color: rgb(168, 226, 160);
+  z-index: 100;
+  top: -1px;
+}
+
+#progress-bar {
+  height: 4px;
+  border: 2px;
+  background-color: #535353;
+  width: 100%;
+}
+
+#volume-progress-bar {
+  height: 4px;
+  border: 2px;
+  background-color: #535353;
+  width: 96px;
+}
+
+#pairingDevice > svg {
+  height: 16px;
+}
+
+#footer-side-controls {
+  width: 30%;
+}
+
+#footer-side-controls-wrapper {
+  width: 70%;
+}
+
+
+/* Volume controls */
+#increase-vol-BTN {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  visibility: hidden;
+  top: -10px;
+  right: 0px;
+}
+#decrease-vol-BTN {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  visibility: hidden;
+  top: -10px;
+}
+
+
+/* John */
+
+body {
+  display: flex;
+ /* background-color: #121212;*/
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(250, 250, 250, 0.7);
+  font-weight: 400;
+  word-spacing: 2px;
+  font-size: medium;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(17, 16, 16) 0%, rgba(19,19,19,1) 100%);
+  
+
+}
+
+#sidebar {
+  width: 232px;
+  min-width: 200px;
+  height: 100%;
+  background-color: white;
+}
+#content {
+  width: 100%;
+}
+
+#imagecontent {
+  padding: 10px;
+  width: 9rem;
+  background-color: rgba(63, 68, 50, 0.7);
+}
+
+h3,
+h5 {
+  color: whitesmoke;
+}
+
+
+/* Ismail */
+
+#sidebar {
+  width: 232px;
+  min-width: 200px;
+  height: 100%;
+  background-color: white;
+}
+#content {
+  width: 100%;
+}
+#imagecontent {
+  padding: 10px;
+  width: 9rem;
+  background-color: rgba(63, 68, 50, 0.7);
+}
+h3,
+h5 {
+  color: whitesmoke;
+}
+
+/* Ismail */
+
+.artistPic {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg");
+  height: 370px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.artistInformation {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+#navBar-artist {
+  background-color: transparent;
+  position: fixed;
+}
+
+.artistPic > .artistInformation > h1 {
+  font-weight: bold;
+}
+.artistPic > .artistInformation > h6 {
+  font-weight: bold;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+}
+
+.table td,
+.table th {
+  padding: 4px;
+  vertical-align: top;
+  border-top: none;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: none;
+}
+
+.songCover {
+  padding-left: 7rem;
+}
+
+.songNumber,
+.songCover {
+  max-width: 50%;
+}
+
+.numberOfPlays {
+  min-width: 340px;
+}
+
+.songDuration {
+  justify-content: flex-end;
+}
+.songNumber {
+  position: relative;
+}
+
+
+.play-hidden-tracklist {
+  position: absolute;
+}
+
+.play-hidden-tracklist > img {
+  transform: translateX(7px);
+}
+
+.play-hidden-tracklist:hover {
+  opacity: 1;
+}
+
+.tableRowtoHover:hover {
+  background-color: rgba(77, 77, 77, 0.65);
+}
+
+.Follow-button {
+  border: 1px solid #646464;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  padding: 3px;
+  margin-left: 30px;
+  width: 81px;
+  font-weight: bold;
+}
+
+.Follow-button:hover {
+  border: 1px solid #ffffff;
+}
+
+.artistMenuButton {
+  background-color: transparent;
+  border: none;
+}
+
+.profile-img {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.artistMenuButton:hover {
+  background-color: transparent;
+  color: white;
+  fill: white;
+  border: none;
+}
+.navigationArtist .menuForArtistpage {
+  font-size: 40px;
+}
+.menuForArtistpage:hover {
+  font-size: 40px;
+  color: #ffffff;
+}
+.navigationArtist .popularHeader,
+.playListName {
+  font-weight: bold;
+}
+.playListName {
+  color: white;
+  width: 159px;
+  height: 24px;
+}
+.profilButton {
+  background-color: black;
+  right: 0;
+  top: 0;
+  border: 0;
+  border-radius: 30px;
+}
+
+.profilButton:hover,
+.dropdown-item:hover {
+  background-color: grey;
+  color: white;
+}
+.dropdown-item {
+  background-color: rgb(42, 42, 42);
+  color: white;
+}
+#dropdownMenuButton:hover {
+  background-color: rgb(34, 33, 33);
+}
+#dropdownMenuButtonArtist {
+  font-size: 35px;
+  border-radius: 30px;
+}
+
+.songNumber:hover {
+  color: transparent;
+}
+.artist-pick-info > p {
+  width: 200px;
+  font-size: 12px;
+}
+.profilButton .navigationArtist {
+  background-color: transparent;
+}
+
+.navbar {
+  position: unset;
+}
+
+.arrows-nav-bar > polyline {
+  stroke: white;
+}
+
+#navBar-artis\ d-flex > nav > div {
+  background: black;
+  border-radius: 30px;
+}
+
+.navigationArtist > span > button {
+  width: 23px;
+  height: 23px;
+  border: 0;
+  background: transparent;
+}
+
+.navigationArtist > span > button > svg {
+  transform: translateX(-1px);
+}
+
+.navigationArtist > span > button:nth-child(2) {
+  background: transparent;
+  width: 23px;
+  height: 23px;
+}
+
+.navigationArtist > span > button:nth-child(2) > svg {
+  transform: translateX(-3px);
+}
+
+
+
+/* Shareble CSS */
+
+.arrows {
+  background-color: black;
+}
+
+.arrows-nav-bar {
+  border-radius: 30px;
+}
+
+.main-icon-without-slide > img:hover {
+  transform: scale(1);
+  transition: 0.1s linear;
+}
+
+.main-icon-without-slide > img:hover {
+  transform: scale(1.1);
+  transition: 0.1s linear;
+}
+
+.songNumber,
+.songCover {
+  max-width: 64px;
+  min-width: 64px;
+}
+
+.songTitle {
+  min-width: 210px;
+}
+.numberOfPlays {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
