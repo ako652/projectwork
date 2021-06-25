@@ -9,6 +9,20 @@ const player = document.getElementsByTagName("audio")[0];
 let trackIndex = 0;
 
 
+const search = function(event) {
+  if(event.key === 'Enter'){
+      console.log(event.target.value)
+    
+      getAlbums(event.target.value)
+  }
+}
+
+const getAlbums = function(searchString) {
+
+  fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=" + searchString, {
+     
+  })
+
 
 
 
