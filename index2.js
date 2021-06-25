@@ -1,6 +1,6 @@
 
 
-const loadArtist = function(){
+const loadplayer = function(){
     fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/75621062`, {
     "method": "GET",
     "headers": {
@@ -30,14 +30,14 @@ const loadArtist = function(){
     console.log(data)
     console.log(data.tracks.data)
 
-    displayHtml(data.tracks.data)
+    displaytext(data.tracks.data)
   })
   .catch(err => {
     console.error(err);
   });
 }
 
-const displayHtml = (datas) => {
+const displaytext = (datas) => {
 datas.forEach( data => {
 let trackListArtist = `    
       <tr class="justify-content-center align-items-center">
@@ -60,7 +60,7 @@ Table[0].insertAdjacentHTML("beforeend", trackListArtist);
 
  
 }
-loadArtist();
+loadplayer();
 
      
      
