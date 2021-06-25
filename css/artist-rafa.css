@@ -1,37 +1,41 @@
 /* Rafa fixes */
 
-
-.fix-table-first-row{
-    max-width: 210px;
-    overflow: hidden;
+.fix-table-first-row {
+  max-width: 210px;
+  overflow: hidden;
 }
 
-.topBar-BG-fix{
-    width: 256px;
-    background-color: #000000;
-    position: fixed;
-    right: -22px;
-    height: 52px;
+.topBar-BG-fix {
+  width: 256px;
+  background-color: transparent;
+  position: fixed;
+  right: -22px;
+  height: 52px;
+  border-radius: 0 0 0 24px;
+  /* z-index: 1000; */
 }
 
-.zindex-rafa-fix{
-    z-index: 100;
+svg {
+  fill: white;
+}
+.zindex-rafa-fix {
+  z-index: 100;
 }
 
-
-.profile-button-rafa-fix{
-    position: absolute;
-    right: 20px;
+.profile-button-rafa-fix {
+  position: absolute;
+  right: 20px;
 }
 
-
-.topNav-Bar-Rafafix{
-    position: fixed;
-    width: 77%;
-    background: black;
+.topNav-Bar-Rafafix {
+  position: fixed;
+  width: 77%;
+  background-color: #00000000;
+  transition-property: background-color;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
 }
 
-.secondpart-mb-fix{
-    margin-bottom: 80px
-
+.secondpart-mb-fix {
+  margin-bottom: 80px;
 }
