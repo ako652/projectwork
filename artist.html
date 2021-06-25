@@ -442,7 +442,7 @@
               <div class="table-Container">
                 <h4 class="popularHeader text-white">Popular</h4>
                 <table class="table text-white" cellspacing="0" cellpadding="0">
-                  <tbody>
+                  <tbody class="trackList">
                     <tr
                       class="
                         tableRowtoHover
@@ -1907,7 +1907,7 @@
     ></script>
     <script src="player.js"></script>
 
-    <script>
+    <script src="artist.js">
       /*
       let tableRowtoHover = document.querySelectorAll(".tableRowtoHover");
       let playbutton = document.querySelectorAll(".play-hidden-tracklist");
@@ -1932,37 +1932,6 @@
         });
       } */
 
-      let newRow = document.querySelectorAll(".tableRowtoHover");
-      for (let i = 0; i < newRow.length; i++) {
-        let currentRow = newRow[i];
-        currentRow.addEventListener("click", function () {
-          currentRow.style.color = "greenyellow";
-        });
-      }
-
-
-
-      
-
-      const loadArtist = function(){
-      fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist/412`, {
-      "method": "GET",
-      "headers": {
-      }
-    })
-    .then(response => {
-  
-      return response.json();
-     
-    })
-    .then(data => {
-      console.log(data)
-    })
-    .catch(err => {
-      console.error(err);
-    });
-  }
-  loadArtist();
     </script>
   </body>
 </html>
